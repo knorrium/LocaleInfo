@@ -1,0 +1,4 @@
+LocaleInfo
+==========
+
+iOS Localization experiments
