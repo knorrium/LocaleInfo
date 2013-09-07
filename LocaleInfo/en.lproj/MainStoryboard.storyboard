@@ -71,6 +71,12 @@
                             <constraint firstAttribute="trailing" secondItem="gL3-gy-039" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="sL3-ec-bSe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblCountry" destination="mP2-5D-zHu" id="ypU-l7-JAb"/>
+                        <outlet property="lblLocale" destination="Lxu-BN-KFh" id="iz8-yb-MkK"/>
+                        <outlet property="txtTextField" destination="jNB-mV-GoW" id="rbo-Xs-7CX"/>
+                        <outlet property="txtTextView" destination="gL3-gy-039" id="KzM-JW-40E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +85,12 @@
     <classes>
         <class className="LIViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LIViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblCountry" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblLocale" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="txtTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txtTextView" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
