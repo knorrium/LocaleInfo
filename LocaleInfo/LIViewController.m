@@ -17,7 +17,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
+    NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    NSLocale *locale = [NSLocale currentLocale];
+    NSString *countryCode = [locale objectForKey: NSLocaleCountryCode];
+    NSString *country = [locale displayNameForKey: NSLocaleCountryCode value: countryCode];
+
+    NSMutableString *countryText = [NSMutableString stringWithString: countryCode];
+    [countryText appendString:@" - "];
+    [countryText appendString:country];
+
+    self.lblLocale.text = language;
+    self.lblCountry.text = countryText;
 }
 
 - (void)didReceiveMemoryWarning
